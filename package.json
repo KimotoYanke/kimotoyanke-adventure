@@ -1,0 +1,39 @@
+{
+  "name": "kimotoyanke-adventure",
+  "version": "1.0.0",
+  "description": "A Rogue-like Game",
+  "bin": "index.js",
+  "main": "index.js",
+  "repository": "https://github.com/KimotoYanke/kimotoyanke-adventure",
+  "author": "KimotoYanke <kimotoyanke@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/plugin-transform-flow-strip-types": "^7.0.0-beta.49",
+    "@babel/plugin-transform-react-jsx": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
+    "ansi-escapes": "^3.1.0",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^8.0.0-beta",
+    "chalk": "^2.4.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-flowtype": "^2.47.1",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "flow-bin": "^0.73.0",
+    "keypress": "^0.2.1",
+    "ramda": "^0.25.0",
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {},
+  "scripts": {
+    "build": "webpack",
+    "start": "npm run build -- --mode development && ./index.js",
+    "dev-start": "npm run build -- --mode development && node --inspect ./index.js"
+  }
+}
